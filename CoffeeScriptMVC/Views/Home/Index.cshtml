@@ -1,7 +1,7 @@
 ﻿<script type="text/coffeescript">
 root = exports ? window
 window.enlarge = (ctr) ->
-    gridItem = $('#' + ctr.id)
+    gridItem = $ "##{ctr.id}"
     className = gridItem.attr 'class'
 
     if gridItem.hasClass 'gridItem'
@@ -9,8 +9,8 @@ window.enlarge = (ctr) ->
     else 
         gridItem.toggleClass 'gridItem_v_on'
 root.displaySwitch = (type) ->
-    grid = $(".topic .grid")
-    list = $(".topic .list")
+    grid = $ ".topic .grid"
+    list = $ ".topic .list"
     if type is 'grid'
         if grid.hasClass 'grid_on'
             grid.removeClass 'grid_on'
@@ -20,20 +20,20 @@ root.displaySwitch = (type) ->
         if list.hasClass 'list_on'
             list.removeClass 'list_on'
         else
-            list.addClass('list_on'
+            list.addClass 'list_on'
 root.changeDisplay = (ctr, id) ->
-    source = $('#' + ctr.id)
+    source = $ "##{ctr.id}"
     if source.hasClass 'listview'
-        $('#' + id + ' .gridItem').removeClass('gridItem').addClass('gridItem_v')
+        $("##{id} .gridItem").removeClass('gridItem').addClass('gridItem_v')
     else
-        $('#' + id + ' .gridItem_v').removeClass('gridItem_v').addClass('gridItem')
+        $("##{id} .gridItem_v").removeClass('gridItem_v').addClass('gridItem')
 
 root.LoadBanner = (ctr) ->
-    $('#' + ctr + ' .banner:gt(0) ').css("display", "none")
-    $('#' + ctr + ' ul li a').mouseover ->
-        index = $('#' + ctr + ' ul li a').index(this)
-        $('#' + ctr + ' .banner').css("display", "none")
-        $('#' + ctr + ' .banner:eq(' + index + ') ').fadeIn('slow')
+    $("##{ctr} .banner:gt(0) ").css "display", "none"
+    $("##{ctr} ul li a").mouseover ->
+        index = $("##{ctr} ul li a").index @@
+        $("##{ctr} .banner").css "display", "none"
+        $("##{ctr} .banner:eq(#{index}) ").fadeIn 'slow'
 $ ->
     LoadBanner 'banners'
 </script>
