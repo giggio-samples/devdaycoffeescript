@@ -67,6 +67,35 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\AddToCart.png" />
+    <Content Include="Content\images\Banner.gif" />
+    <Content Include="Content\images\banner_1.png" />
+    <Content Include="Content\images\banner_2.png" />
+    <Content Include="Content\images\banner_btn.png" />
+    <Content Include="Content\images\bg.png" />
+    <Content Include="Content\images\block.png" />
+    <Content Include="Content\images\block_line.png" />
+    <Content Include="Content\images\cell_bg.png" />
+    <Content Include="Content\images\content_bg.png" />
+    <Content Include="Content\images\content_right_bg.gif" />
+    <Content Include="Content\images\content_right_footer.gif" />
+    <Content Include="Content\images\content_right_header.gif" />
+    <Content Include="Content\images\display_btn.png" />
+    <Content Include="Content\images\item_bg.png" />
+    <Content Include="Content\images\logo.gif" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\menu_bg.png" />
+    <Content Include="Content\images\search_btn.png" />
+    <Content Include="Content\images\Xbox360.jpg" />
+    <Content Include="Content\images\xbox360Halo3EditionConsole.jpg" />
+    <Content Include="Content\images\xbox360HardDrive.jpg" />
+    <Content Include="Content\images\xbox360HDMICable.jpg" />
+    <Content Include="Content\images\Xbox360Headset.jpg" />
+    <Content Include="Content\images\Xbox360MemoryUnit.jpg" />
+    <Content Include="Content\images\xbox360MessengerKit.jpg" />
+    <Content Include="Content\images\Xbox360WheelController.jpg" />
+    <Content Include="Content\images\Xbox360WirelessController.jpg" />
+    <Content Include="Content\Style.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -166,6 +195,7 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\images\pspbrwse.jbf" />
     <None Include="Scripts\Site.coffee">
       <Generator>CoffeeScriptGenerator</Generator>
       <LastGenOutput>Site.js</LastGenOutput>
